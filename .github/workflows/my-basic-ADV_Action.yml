@@ -11,8 +11,7 @@ env:
 on: 
   push:
     branches: 
-      - master
-
+      - main
 jobs:
   my_testing:
     runs-on: ubuntu-latest
@@ -64,6 +63,3 @@ jobs:
 
     - name: Lets test some packages if they are here 2
       run : zip --version
-      
-      
-© 2021 GitHub, Inc.
