@@ -5,13 +5,13 @@
 
 name: My-Action
 env:
-  APPLICATION_NAME    : "MyFlask"
-  DEPLOY_PACKAGE_NAME : "flask-deploy-ver-${{ github.sha }}"
+  APPLICATION_NAME    : "My_APPLICATION_NAME"
+  DEPLOY_PACKAGE_NAME : "My--DEPLOY_PACKAGE_NAME-ver-${{ github.sha }}"
 
 on: 
   push:
     branches: 
-      - main
+      - master
 jobs:
   my_testing:
     runs-on: ubuntu-latest
@@ -22,12 +22,14 @@ jobs:
     
     - name: Execure few commands
       run : |
-        echo "Hello Message1"
-        echo "Hello Message2"
+        echo "Hello Message 1"
+        echo "Hello Message 2"
         echo "Appication name: ${{ env.APPLICATION_NAME }}"
     
     - name: List current folder
       run : ls -la
+ 
+ #-------------------Clone This repo to server
    
     - name: Git clone my repo
       uses: actions/checkout@v1   
