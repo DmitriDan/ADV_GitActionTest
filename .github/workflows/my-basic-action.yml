@@ -69,4 +69,4 @@ jobs:
       run : zip --version
 
     - name: Lets PRINT ENVIROMENT
-      run : printenv
+      run : printenv > mylogs.txt
