@@ -67,3 +67,6 @@ jobs:
 
     - name: Lets test if they are zip install
       run : zip --version
+
+    - name: Lets PRINT ENVIROMENT
+      run : printenv
