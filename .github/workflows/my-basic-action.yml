@@ -29,11 +29,13 @@ jobs:
     - name: List current folder
       run : ls -la
  
- #-------------------Clone This repo to server
-   
+#---------------Clone This repo to server----------- 
+  
     - name: Git clone my repo
       uses: actions/checkout@v1   
-  
+
+#---------------------------------------------------
+
     - name: List current folder
       run : ls -la
   
