@@ -62,8 +62,8 @@ jobs:
     - name: Printing Deployment package
       run : echo "Deplyo pakcage name is ${{ env.DEPLOY_PACKAGE_NAME }}"
     
-    - name: Lets test some packages if they are here 1
+    - name: Lets test aws vertion
       run : aws --version
 
-    - name: Lets test some packages if they are here 2
+    - name: Lets test if they are zip install
       run : zip --version
