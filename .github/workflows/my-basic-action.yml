@@ -70,3 +70,6 @@ jobs:
 
     - name: Lets PRINT ENVIROMENT
       run : printenv > mylogs.txt
+      
+    - name: Lets PRINT PWD
+      run : pwd
