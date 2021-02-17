@@ -20,7 +20,7 @@ jobs:
     - name: Print Hello Message in Testing
       run : echo "Hello World from Testing job"
     
-    - name: Execure few commands
+    - name: Few print commands
       run : |
         echo "Hello Message 1"
         echo "Hello Message 2"
